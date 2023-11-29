@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            /* Add a background color for contrast */
+        }
+
+        .inner {
+            display: flex;
+            width: 70%;
+            box-shadow: 10px 10px 68px -6px rgba(0, 0, 0, 0.5);
+        }
+
+        .photo {
+            width: 50%;
+            padding: 0%;
+            height: 628px;
+            border-radius: 100px;
+        }
+
+        .photo img {
+            width: 100%;
+            height: 100%;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+
+        .userform {
+            background-color: rgb(179, 203, 229);
+            padding: 20px;
+            width: 50%;
+            border-radius: 0 20px 20px 0;
+            /* Adjust the border-radius for the form */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .userform h1 {
+            color: #fff;
+            margin-top: 0px;
+            /* Adjust margin for spacing */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="inner">
+        <div class="photo">
+            <img src="website_image.jpeg" alt="ig/interface.svg">
+        </div>
+        <div class="userform">
+            <h1>Welcome</h1>
+            <form action="#" method="post" class="form-container">
+                <!-- Your form elements here -->
+
+                <select id="RDistrict" name="RDistrict" required>
+                    <option value="">Select your district</option>
+                    <option value="Ahmednagar">Ahmednagar</option>
+                    <option value="Akola">Akola</option>
+                    <option value="Amravati">Amravati</option>
+                    <option value="Aurangabad">Aurangabad</option>
+                    <option value="Beed">Beed</option>
+                    <option value="Bhandara">Bhandara</option>
+                    <option value="Buldhana">Buldhana</option>
+                    <option value="Chandrapur">Chandrapur</option>
+                    <option value="Dhule">Dhule</option>
+                    <option value="Gadchiroli">Gadchiroli</option>
+                    <option value="Gondia">Gondia</option>
+                    <option value="Hingoli">Hingoli</option>
+                    <option value="Jalgaon">Jalgaon</option>
+                    <option value="Jalna">Jalna</option>
+                    <option value="Kolhapur">Kolhapur</option>
+                    <option value="Latur">Latur</option>
+                    <option value="Mumbai City">Mumbai City</option>
+                    <option value="Mumbai Suburban">Mumbai Suburban</option>
+                    <option value="Nagpur">Nagpur</option>
+                    <option value="Nanded">Nanded</option>
+                    <option value="Nandurbar">Nandurbar</option>
+                    <option value="Nashik">Nashik</option>
+                    <option value="Osmanabad">Osmanabad</option>
+                    <option value="Palghar">Palghar</option>
+                    <option value="Parbhani">Parbhani</option>
+                    <option value="Pune">Pune</option>
+                    <option value="Raigad">Raigad</option>
+                    <option value="Ratnagiri">Ratnagiri</option>
+                    <option value="Sangli">Sangli</option>
+                    <option value="Satara">Satara</option>
+                    <option value="Sindhudurg">Sindhudurg</option>
+                    <option value="Solapur">Solapur</option>
+                    <option value="Thane">Thane</option>
+                    <option value="Wardha">Wardha</option>
+                    <option value="Washim">Washim</option>
+                    <option value="Yavatmal">Yavatmal</option>
+
+                </select><br>
+
+                <select id="RDistrict" name="RDistrict" required>
+                    <option value="">select required district</option>
+                    <option value="Ahmednagar">Ahmednagar</option>
+                    <option value="Akola">Akola</option>
+                    <option value="Amravati">Amravati</option>
+                    <option value="Aurangabad">Aurangabad</option>
+                    <option value="Beed">Beed</option>
+                    <option value="Bhandara">Bhandara</option>
+                    <option value="Buldhana">Buldhana</option>
+                    <option value="Chandrapur">Chandrapur</option>
+                    <option value="Dhule">Dhule</option>
+                    <option value="Gadchiroli">Gadchiroli</option>
+                    <option value="Gondia">Gondia</option>
+                    <option value="Hingoli">Hingoli</option>
+                    <option value="Jalgaon">Jalgaon</option>
+                    <option value="Jalna">Jalna</option>
+                    <option value="Kolhapur">Kolhapur</option>
+                    <option value="Latur">Latur</option>
+                    <option value="Mumbai City">Mumbai City</option>
+                    <option value="Mumbai Suburban">Mumbai Suburban</option>
+                    <option value="Nagpur">Nagpur</option>
+                    <option value="Nanded">Nanded</option>
+                    <option value="Nandurbar">Nandurbar</option>
+                    <option value="Nashik">Nashik</option>
+                    <option value="Osmanabad">Osmanabad</option>
+                    <option value="Palghar">Palghar</option>
+                    <option value="Parbhani">Parbhani</option>
+                    <option value="Pune">Pune</option>
+                    <option value="Raigad">Raigad</option>
+                    <option value="Ratnagiri">Ratnagiri</option>
+                    <option value="Sangli">Sangli</option>
+                    <option value="Satara">Satara</option>
+                    <option value="Sindhudurg">Sindhudurg</option>
+                    <option value="Solapur">Solapur</option>
+                    <option value="Thane">Thane</option>
+                    <option value="Wardha">Wardha</option>
+                    <option value="Washim">Washim</option>
+                    <option value="Yavatmal">Yavatmal</option>
+
+                </select><br>
+
+                <input type="number" id="cetInput" placeholder="Enter your CET %tile" min="0" max="100"
+                    oninput="validateCET(this)" required><br>
+
+                <script>
+                    function validateCET(input) {
+                        if (input.value.includes('.') && input.value.split('.')[1].length > 1) {
+                            input.value = input.value.slice(0, input.value.indexOf('.') + 2);
+                        }
+                    }
+                </script>
+                <select id="Branch" name="Branch" required>
+                    <option value="">Select a Branch</option>
+                    <option value="Civil Engineering">Civil Engineering</option>
+                    <option value="Computer Science and Engineering">Computer Science and Engineering</option>
+                    <option value="Information Technology">Civil Engineering</option>
+                    <option value="Computer Technology">Computer Technology</option>
+                    <option value="Computer Science and Design">Computer Science and Design</option>
+                    <option value="Electrical Engineering (Electronics and Power)">Electrical Engineering (Electronics and Power)</option>
+                    <option value="Electronics and Telecommunication Engineering">Electronics and Telecommunication Engineering</option>
+                    <option value="Mechanical Engineering">Mechanical Engineering</option>
+                    <option value="Artificial Intelligence and Machine Learning">Artificial Intelligence and Machine Learning</option>
+                    <option value="Artificial Intelligence and Data Science">Artificial Intelligence and Data Science</option>
+                    <option value="Aeronautical Engineering">Aeronautical Engineering</option>
+                    <option value="BioTechnology">BioTechnology</option>
+                    <option value="Surface Coating Technology">Surface Coating Technology</option>
+                    <option value="Food Technology">Food Technology</option>
+                    <option value="Chemical Engineering">Chemical Engineering</option>
+                    <option value="Plastic and Polymer Technology">Plastic and Polymer Technology</option>
+                    <option value="Paper and Pulp Technology">Paper and Pulp Technology</option>
+                    <option value="Petro Chemical Technology">Civil Engineering</option>
+                    <option value="Oil Technology">Oil Technology</option>
+                    <option value="Industrial IoT">Industrial IoT</option>
+                    <option value="Robotics and Artificial Intelligence">Robotics and Artificial Intelligence</option>
+                    <option value="Cyber Security">Cyber Security</option>
+                    <option value="Computer Science and Business Systems">Computer Science and Business Systems</option>
+                    <option value="Bio Medical Engineering">Bio Medical Engineering</option>
+                    <option value="Electronics and Computer Science">Electronics and Computer Science</option>
+                    <option value="Safety and Fire Engineering">Safety and Fire Engineering</option>
+                    <option value="Instrumentation Engineering">Instrumentation Engineering</option>
+                    <option value="Production Engineering">Production Engineering</option>
+                    <option value="Textile Technology">Textile Technology</option>
+                    <option value="Automation and Robotics">Automation and Robotics</option>
+                    <option value="Automobile Engineering">Automobile Engineering</option>
+                    <option value="Mechatronics Engineering">Mechatronics Engineering</option>
+                    <option value="Internet of Things">Internet of Things</option>
+                    <option value="Pharmaceutical and Fine Chemical Technology">Pharmaceutical and Fine Chemical Technology</option>
+                    <option value="Mining Engineering">Mining Engineering</option>
+                    <option value="Electroncs Engineering">Electroncs Engineering</option>
+                    <option value="Oils Fats and Waxes Technology">Oils Fats and Waxes Technology</option>
+                    <option value="Paints Technology">Paints Technology</option>
+                    <option value="Agricultural Engineering">Agricultural Engineering</option>
+                    <option value="Mechanical & Automation Engineering">Mechanical & Automation Engineering</option>
+                    <option value="Civil and Environmental Engineering">Civil and Environmental Engineering</option>
+                    <option value="Product Engineering (Sandwich)">Product Engineering (Sandwich)</option>
+                    <option value="Dyestuff Technology">Dyestuff Technology</option>
+                    <option value="Oil, Oleochemicals and Surfactants Technology">Oil, Oleochemicals and Surfactants Technology</option>
+                    <option value="Pharmaceuticals Chemistry and Technology">Pharmaceuticals Chemistry and Technology</option>
+                    <option value="Fibres and Textile Processing Technology">Fibres and Textile Processing Technology</option>
+                    <option value="Polymer Engineering and Technology">Polymer Engineering and Technology</option>
+                    <option value="Mechanical and Mechatronics Engineering (Additive Manufacturing)">Mechanical and Mechatronics Engineering</option>
+                    <option value="Civil and Infrastructure Engineering">Civil and Infrastructure Engineering</option>
+                    <option value="Textile Engineering / Technology">Textile Engineering / Technology</option>
+                    <option value="Food Technology and Management">Food Technology and Management</option>
+            
+                </select><br>
+
+                <select name="round" id="round">
+                    <option value="round1">round 1</option>
+                    <option value="round2">round 2</option>
+                </select><br>
+
+
+                <select name="Quota" id="quota" required>
+                    <option value="Home">Home University</option>
+                    <option value="Other">Other University</option>
+                </select><br>
+              
+                <select name="Caste" id="caste">
+                    <OPTIOn value="">enter your category</OPTIOn>
+                    <option value="OPEN">OPEN</option>
+                    <option value="OBC">OBC</option>
+                    <option value="SC">SC</option>
+                    <option value="ST">ST</option>
+                    <option value="LOPEN">LOPEN</option>
+                    <option value="LOBC">LOBC</option>
+                    <option value="NT1">NT1</option>
+                    <option value="NT2">NT2</option>
+
+                </select>
+
+            
+        <button id="btn">check for colleges</button>
+
+
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
